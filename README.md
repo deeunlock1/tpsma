@@ -1,10 +1,11 @@
 # PM1 React App
 
-โปรเจกต์นี้เป็นระบบจัดการงาน (TPSMA Project Management) ตัวอย่าง  
-- สร้างด้วย React
-- ใช้ mock data สำหรับทดสอบ
-- มีระบบ Login, Dashboard, เปลี่ยนสถานะงาน, และ Logout
+โปรเจกต์นี้เป็นระบบติดตามสถานะงาน (TPSMA Project Management) ตัวอย่าง  
+- สร้างด้วย React.js 
+- ใช้ ข้อมูลจำลอง สำหรับทดสอบ
+- มีระบบ Login, Dashboard, เปลี่ยนสถานะงานตามกดปุ่ม, และ Logout
 - รองรับ Responsive ทุกอุปกรณ์
+- มีรายละเอียดตามกดงานนั้นๆ
 
 # Login
 - username:admin
