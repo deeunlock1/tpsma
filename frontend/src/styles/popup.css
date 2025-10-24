@@ -1,0 +1,90 @@
+/* ฉากหลังดำโปร่ง */
+.popup-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  background: rgba(0,0,0,0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* กล่อง popup */
+.popup-box {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px 0 #0002;
+  padding: 28px 20px 20px 20px;
+  min-width: 260px;
+  max-width: 90vw;
+  text-align: center;
+  animation: popup-fadein 0.18s;
+}
+
+/* ข้อความ */
+.popup-message {
+  margin-bottom: 18px;
+  font-size: 1.15rem;
+  color: #a84a7f;
+  font-weight: 600;
+}
+
+/* ปุ่ม */
+.popup-btns {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin-top: 8px;
+}
+.popup-btn {
+  padding: 8px 22px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.popup-btn.confirm {
+  background: #22c55e;   /* สีเขียว (Tailwind green-500) */
+  color: #fff;
+}
+.popup-btn.confirm:hover {
+  background: #16a34a;   /* สีเขียวเข้ม (Tailwind green-600) */
+}
+.popup-btn.cancel {
+  background: #ef4444;   /* สีแดง (Tailwind red-500) */
+  color: #fff;
+}
+.popup-btn.cancel:hover {
+  background: #b91c1c;   /* สีแดงเข้ม (Tailwind red-700) */
+}
+
+/* อนิเมชั่น */
+@keyframes popup-fadein {
+  from { opacity: 0; transform: scale(0.95);}
+  to { opacity: 1; transform: scale(1);}
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .popup-box {
+    padding: 18px 6vw 16px 6vw;
+    border-radius: 12px;
+    min-width: 0;
+    font-size: 1rem;
+  }
+  .popup-message {
+    font-size: 1rem;
+    margin-bottom: 12px;
+  }
+  .popup-btns {
+    gap: 10px;
+  }
+  .popup-btn {
+    padding: 8px 12px;
+    font-size: 0.98rem;
+    border-radius: 8px;
+  }
+}
